@@ -1,0 +1,8 @@
+#give one linearlist and search find index position
+def search(li,find):
+    for i in li:
+        if i ==find:
+            return  li.index(i)
+li=[3,5,6,7,23,664,35635]
+find=23
+print("the position is"  ,search(li,find))
