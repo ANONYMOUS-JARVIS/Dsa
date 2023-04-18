@@ -1,0 +1,14 @@
+def sort(li):
+    for i in range(len(li)-1):
+        minpos=i
+        for j in range(i,len(li)):
+            if li[minpos]>li[j]:
+                minpos=j
+        temp=li[i]
+        li[i]=li[minpos]
+        li[minpos]=temp
+        # you colud seen every ittraion list
+        #print(li)
+    return li
+li=[2,65,3,14,1,55,88,49,34]
+print(sort(li))
